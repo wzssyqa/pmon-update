@@ -1,0 +1,15 @@
+Source: pmon-menu
+Section: admin
+Priority: optional
+Standards-Version: 0.1.0
+Build-Depends: debhelper (>= 10)
+Rules-Requires-Root: no
+
+Package: pmon-menu
+Depends: linux-base, ${misc:Depends}
+Suggests: flash-kernel
+Architecture: all
+Description: pmon menu update
+ Automatically create boot.cfg boot menu for pmon bootloader. Boot menu
+ entries are automatically created for every kernel package when they are
+ installed.

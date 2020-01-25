@@ -1,0 +1,37 @@
+.TH pmon\-UPDATE 8 2017\-10\-18 1.00 "pmon configuration tool"
+
+.SH NAME
+pmon\-update \- program to generate pmon menu files
+
+.SH SYNOPSIS
+\fBpmon\-update\fR
+
+.SH DESCRIPTION
+pmon\-update is a tool used to generate the menu files used by the pmon bootloader. Options can be configured in /etc/default/pmon.
+
+.SH OPTIONS
+.IP "PMON_UPDATE=""\fBtrue\fR|false""" 4
+This variable specifies if pmon\-update is allowed to modify the configuration files in /boot/cfg. Values are either 'true' or 'false', default is 'true'.
+.IP "PMON_ALTERNATIVES=""\fBdefault recovery\fR""" 4
+This variable specifies which entries pmon\-update is populating. Values are 'default', 'recovery', 'live', default is 'default recovery'.
+.IP "PMON_BOOTDEV=""\fB(wd0,0)\fR""" 4
+This variable specifies the prefix of boot device from pmon point of view, default is (wd0,0).
+.IP "PMON_DEFAULT=""\fB1\fR""" 4
+This variable specifies the default entry to boot. The first entry starts from 1 and so on. Default is 1.
+.IP "PMON_ENTRIES=""\fBall\fR""" 4
+This variables specifies how many kernel versions should be used to populate the boot configuration. Value is an integer starting with 1, or 'all' to populate for all kernels, default is 'all'.
+.IP "PMON_MENU_LABEL=""\fBDebian GNU/Linux, kernel\fR""" 4
+This variable specifies the text that is used as a description in the boot menu. Value is an arbitrary string. If lsb_release is installed, the distributors id is automatically determined. If lsb_release is not available, it defaults to 'Debian GNU/Linux, kernel'.
+.IP "PMON_PARAMETERS=""\fBro quiet\fR""" 4
+This variable specifies additional boot parameters that are appended to each kernel entry. Value is an arbitrary string, default is 'ro quiet' (except for recovery entries, where quiet is avoided).
+.IP "PMON_ROOT=""\fBroot\fR=\fIDEVICE\fR""" 4
+This variable specifies the root partition. It is automatically extracted from /etc/fstab. pmon supports both devices and UUIDs.
+.IP "PMON_TIMEOUT=""\fB50\fR""" 4
+This variable specifies the time that pmon should wait for user input during boot. Values are in seconds. The default is 5.
+
+.SH FILES
+/etc/default/pmon
+
+
+.PP
+pmon\-update and this manual page was written by Daniel Baumann <\fIdaniel.baumann@progress-technologies.net\fR> for extlinux. Riku Voipio <\fIriku.voipio@linaro.org\fR> updated them for u\-boot, Jiaxun Yang <\fjiaxun.yang@flygoat.com\fR> updated them for pmon.

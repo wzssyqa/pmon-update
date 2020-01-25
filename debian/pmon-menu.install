@@ -1,0 +1,4 @@
+zz-pmon-menu      etc/kernel/postinst.d
+zz-pmon-menu      etc/kernel/postrm.d
+pmon-update       usr/sbin
+
