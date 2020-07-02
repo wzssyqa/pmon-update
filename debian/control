@@ -1,11 +1,12 @@
-Source: pmon-menu
+Source: pmon-update
 Section: admin
 Priority: optional
-Standards-Version: 0.1.0
+Maintainer: Boyue Zhang <boyue.zhang@pzhang.net>
+Standards-Version: 0.2.0
 Build-Depends: debhelper (>= 10)
 Rules-Requires-Root: no
 
-Package: pmon-menu
+Package: pmon-update
 Depends: linux-base, ${misc:Depends}
 Suggests: flash-kernel
 Architecture: all

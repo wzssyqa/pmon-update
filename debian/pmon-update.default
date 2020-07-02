@@ -1,10 +1,9 @@
-## /etc/default/pmon - configuration file for pmon-update(8)
+## /etc/default/pmon-update - configuration file for pmon-update(8)
 
 #PMON_UPDATE="true"
-
 #PMON_ALTERNATIVES="default recovery"
 #PMON_BOOTDEV="(wd0,0)"
-#PMON_DEFAULT="1"
+#PMON_DEFAULT="0"
 #PMON_ENTRIES="all"
 #PMON_MENU_LABEL="Debian GNU/Linux"
 #PMON_PARAMETERS="ro quiet"

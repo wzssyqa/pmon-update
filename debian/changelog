@@ -1,0 +1,11 @@
+pmon-update (0.2.0) unstable; urgency=medium
+
+  * Fixed incorrect default entry number
+
+ -- Boyue Zhang <boyue.zhang@pzhang.net>  Thu, 02 Jul 2020 14:23:13 +0800
+
+pmon-update (0.1.0) unstable; urgency=medium
+
+  * Initial release.
+
+ -- Boyue Zhang <boyue.zhang@pzhang.net>  Wed, 01 Jul 2020 17:26:37 +0800
