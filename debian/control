@@ -2,15 +2,19 @@ Source: pmon-update
 Section: admin
 Priority: optional
 Maintainer: Boyue Zhang <boyue.zhang@pzhang.net>
-Standards-Version: 0.2.0
+Standards-Version: 4.5.0
 Build-Depends: debhelper (>= 10)
-Rules-Requires-Root: no
+Homepage: https://github.com/Loongbian/pmon-update
+Vcs-Browser: https://github.com/Loongbian/pmon-update
+Vcs-Git: https://github.com/Loongbian/pmon-update.git
 
 Package: pmon-update
 Depends: linux-base, ${misc:Depends}
 Suggests: flash-kernel
-Architecture: all
+Architecture: mipsel mips64el
 Description: pmon menu update
  Automatically create boot.cfg boot menu for pmon bootloader. Boot menu
  entries are automatically created for every kernel package when they are
  installed.
+ .
+ Pmon is a bootloader. Some Loongson machines may use it.

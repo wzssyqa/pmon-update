@@ -1,0 +1,13 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: pmon-update
+Upstream-Contact: Boyue Zhang <boyue.zhang@pzhang.net>
+
+Files: *
+Copyright: Copyright (C) 2020 Boyue Zhang <boyue.zhang@pzhang.net>
+ Copyright (C) 2020 Boyue Zhang <boyue.zhang@pzhang.net>
+License: GPL-2
+
+License: GPL-2
+ On Debian and Debian-based systems, a copy of the GNU General Public
+ License version 2 is available in /usr/share/common-licenses/GPL-2.
+
